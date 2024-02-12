@@ -1,0 +1,232 @@
+/*TITLE BEGIN*/
+html{
+  background-image:url("images/bg.jpg") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}  
+.learn-more-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.learn-more-btn:hover {
+  background-color: darkgreen;
+}
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #85d589;
+  opacity: 80%;
+}
+
+.title span{
+  font-size: 6em;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0;
+  animation: drop 0.4s linear forwards;
+}
+
+.title span:nth-child(2){
+  animation-delay: 0.2s;
+}
+.title span:nth-child(3){
+    animation-delay: 0.3s;
+}
+.title span:nth-child(4){
+  animation-delay: 0.4s;
+}
+.title span:nth-child(5){
+  animation-delay: 0.5s;
+}
+.title span:nth-child(6){
+  animation-delay: 0.6s;
+}
+.title span:nth-child(7){
+  animation-delay: 0.7s;
+}
+.title span:nth-child(8){
+  animation-delay: 0.8s;
+}
+.title span:nth-child(9){
+  animation-delay: 0.9s;
+}
+.title span:nth-child(10){
+    animation-delay: 1s;
+}
+.title span:nth-child(11){
+  animation-delay: 1.1s;
+}
+.title span:nth-child(12){
+  animation-delay: 1.2s;
+}
+.title span:nth-child(13){
+  animation-delay: 1.3s;
+}
+.title span:nth-child(14){
+  animation-delay: 1.4s;
+}
+.title span:nth-child(15){
+  animation-delay: 1.5s;
+}
+.title span:nth-child(16){
+  animation-delay: 1.6s;
+}
+.title span:nth-child(17){
+  animation-delay: 1.7s;
+}
+.title span:nth-child(18){
+  animation-delay: 1.8s;
+}
+.title span:nth-child(19){
+  animation-delay: 1.9s;
+}
+.title span:nth-child(20){
+  animation-delay: 2s;
+}
+
+@keyframes drop{
+  0%{
+    transform: translateY(-100px) scaleY(0.9);
+  }
+  5%{
+    opacity: 0.7;
+  }
+  50%{
+    transform: translateY(0px) scaleY(1);
+    opacity: 1;
+  }
+  65%{
+    transform: translateY(-17px) scaleY(0.9);
+  }
+  75%{
+    transform: translateY(-22px) scaleY(0.9);
+  }
+  100%{
+    transform: translateY(0px) scaleY(1);
+    opacity: 1;
+  }
+}
+/*Title END*/
+
+/* NAV Begin */
+ul{ 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #85d589;
+  text-align: left;
+}
+
+li a {
+  display: inline-block;
+  padding: 8px;
+  color:#ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover, a:active
+{
+  background-color: #96c598;
+}
+/* NAV END */
+
+/* BODY Begin */
+.column-right {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+  flex-direction: column;
+}
+/* img{
+  width: 180px;
+  height: 160px;
+  border-radius:20PX;
+} */
+.column-left {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 0rem 2rem;
+}
+
+
+/* CARD Begin */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  width: calc(33.33% - 20px); /* 3 cards in one line with margin */
+  height: 200px;
+  margin: 10px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  align-self: center;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  
+}
+
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.card-front {
+  background-color: #ffffff;
+}
+.card-front:nth-child(1) {
+  background-image: URL('images/image1.jpg');
+}
+.card-front:nth-child(2) {
+  background-image: URL('images/image2.jpg');
+}
+.card-front:nth-child(3) {
+  background-image: URL('images/image3.jpg');
+}
+
+
+.card-back {
+  background-color: #85d589;
+  transform: rotateY(180deg);
+}
+/*CARD END*/
+.cardx {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+
